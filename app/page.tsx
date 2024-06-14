@@ -1,5 +1,6 @@
 import Grid from "@/components/shared/Grid"
 import Hero from "@/components/shared/Hero"
+import RecentProject from "@/components/shared/RecentProject"
 import { FloatingNav } from "@/components/ui/FloatingNavbar"
 import { navItems } from "@/data"
 
@@ -10,6 +11,7 @@ const HomePage = () => {
       <div className="w-full max-w-7xl">
         <Hero />
         <Grid />
+        <RecentProject />
       </div>
     </main>
   )

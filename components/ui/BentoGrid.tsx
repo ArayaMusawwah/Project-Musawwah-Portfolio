@@ -52,6 +52,9 @@ export const BentoGridItem = ({
 }: IBentoGridItem) => {
   const [copied, setCopied] = useState(false)
 
+  const rightist = ["MongoDB", "TailwindCSS", "ExpressJS"]
+  const leftist = ["React.js", "Next.js", "Typescript"]
+
   const handleCopy = () => {
     navigator.clipboard.writeText("miramadhan354@gmail.com")
     setCopied(true)
@@ -121,7 +124,7 @@ export const BentoGridItem = ({
           {id === 3 && (
             <div className="absolute -right-3 flex w-fit gap-1 lg:-right-2 lg:gap-5">
               <div className="flex flex-col gap-3 lg:gap-9">
-                {["React.js", "Next.js", "Typescript"].map((item) => (
+                {leftist.map((item) => (
                   <span
                     key={item}
                     className="rounded-lg bg-[#10132E] px-3 py-2 text-center text-xs opacity-50 lg:px-3 lg:py-4 lg:text-base lg:opacity-100"
@@ -134,7 +137,7 @@ export const BentoGridItem = ({
 
               <div className="flex flex-col gap-3 lg:gap-9">
                 <span className="rounded-lg bg-[#10132e] px-3 py-4 text-center" />
-                {["MongoDB", "TailwindCSS", "ExpressJS"].map((item) => (
+                {rightist.map((item) => (
                   <span
                     key={item}
                     className="rounded-lg bg-[#10132E] px-3 py-2 text-center text-xs opacity-50 lg:px-3 lg:py-4 lg:text-base lg:opacity-100"
