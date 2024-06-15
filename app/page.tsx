@@ -1,3 +1,4 @@
+import Experience from "@/components/shared/Experience"
 import Grid from "@/components/shared/Grid"
 import Hero from "@/components/shared/Hero"
 import RecentProject from "@/components/shared/RecentProject"
@@ -14,6 +15,7 @@ const HomePage = () => {
         <Grid />
         <RecentProject />
         <Testimonial />
+        <Experience />
       </div>
     </main>
   )
