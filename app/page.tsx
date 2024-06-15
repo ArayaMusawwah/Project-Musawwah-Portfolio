@@ -1,3 +1,4 @@
+import Approach from "@/components/shared/Approach"
 import Experience from "@/components/shared/Experience"
 import Grid from "@/components/shared/Grid"
 import Hero from "@/components/shared/Hero"
@@ -16,6 +17,7 @@ const HomePage = () => {
         <RecentProject />
         <Testimonial />
         <Experience />
+        <Approach />
       </div>
     </main>
   )
