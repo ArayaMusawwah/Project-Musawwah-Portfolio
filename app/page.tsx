@@ -1,6 +1,7 @@
 import Grid from "@/components/shared/Grid"
 import Hero from "@/components/shared/Hero"
 import RecentProject from "@/components/shared/RecentProject"
+import Testimonial from "@/components/shared/Testimonial"
 import { FloatingNav } from "@/components/ui/FloatingNavbar"
 import { navItems } from "@/data"
 
@@ -12,6 +13,7 @@ const HomePage = () => {
         <Hero />
         <Grid />
         <RecentProject />
+        <Testimonial />
       </div>
     </main>
   )

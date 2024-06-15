@@ -10,17 +10,6 @@ import { BackgroundGradientAnimation } from "./GradientBg"
 import { GlobeDemo } from "./GridGlobe"
 import MagicButton from "./MagicButton"
 
-interface IBentoGridItem {
-  className?: string
-  title?: string | React.ReactNode
-  description?: string | React.ReactNode
-  id?: number
-  img?: string
-  imgClassName: string
-  titleClassName?: string
-  spareImg?: string
-}
-
 export const BentoGrid = ({
   className,
   children
@@ -49,11 +38,29 @@ export const BentoGridItem = ({
   imgClassName,
   titleClassName,
   spareImg
-}: IBentoGridItem) => {
+}: {
+  className?: string
+  title?: string | React.ReactNode
+  description?: string | React.ReactNode
+  id?: number
+  img?: string
+  imgClassName: string
+  titleClassName?: string
+  spareImg?: string
+}) => {
   const [copied, setCopied] = useState(false)
 
   const rightist = ["MongoDB", "TailwindCSS", "ExpressJS"]
   const leftist = ["React.js", "Next.js", "Typescript"]
+
+  const defaultOptions = {
+    loop: copied,
+    autoplay: copied,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice"
+    }
+  }
 
   const handleCopy = () => {
     navigator.clipboard.writeText("miramadhan354@gmail.com")
@@ -151,17 +158,9 @@ export const BentoGridItem = ({
 
           {id === 6 && (
             <div className="relative mt-5">
+              {/* TODO: FIX ERROR within this section */}
               <div className={`absolute -bottom-5 right-0`}>
-                <Lottie
-                  options={{
-                    loop: copied,
-                    autoplay: true,
-                    animationData,
-                    rendererSettings: {
-                      preserveAspectRatio: "xMidYMid slice"
-                    }
-                  }}
-                />
+                {/* <Lottie options={defaultOptions} height={200} width={400} /> */}
               </div>
 
               <MagicButton
