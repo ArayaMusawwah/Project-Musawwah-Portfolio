@@ -6,8 +6,8 @@ import { socialMedia } from "@/data"
 
 const Footer = () => {
   return (
-    <footer className="w-full py-20" id="contact">
-      <div className="absolute -bottom-72 left-0 min-h-96 w-full">
+    <footer className="relative w-full overflow-hidden py-20" id="contact">
+      <div className="absolute -bottom-72 left-0 min-h-96 w-full overflow-hidden">
         <Image
           src={"/footer-grid.svg"}
           alt=""
@@ -36,7 +36,7 @@ const Footer = () => {
       </div>
       <div className="mt-16 flex flex-col items-center justify-between gap-y-4 md:flex-row">
         <p className="text-sm font-light md:text-base md:font-normal">
-          Copyright© 2024 Musawwah.
+          Copyright© 2024 Arμ&apos;s Group&reg;. All Right Reserved.
         </p>
         <div className="flex items-center gap-6 md:gap-3">
           {socialMedia.map((profile) => (
