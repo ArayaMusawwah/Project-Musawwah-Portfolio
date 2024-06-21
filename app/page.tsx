@@ -16,7 +16,7 @@ const HomePage = () => {
         <Hero />
         <Grid />
         <RecentProject />
-        <Testimonial />
+        {/* <Testimonial /> */}
         <Experience />
         <Approach />
         <Footer />
